@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
         timer.scheduleAtFixedRate(new MyTimerTask(),3000,4000);
 
 
-        textView = (TextView)findViewById(R.id.textabout);
+       final TextView textView = (TextView)findViewById(R.id.textabout);
         frombottom = AnimationUtils.loadAnimation(this,R.anim.frombottom);
         textView.setAnimation(frombottom);
 

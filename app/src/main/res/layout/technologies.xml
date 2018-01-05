@@ -2,16 +2,33 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/textView"
     android:background="@drawable/technologies">
 
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/technologies"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:text="Technologies"
-        android:textStyle="bold"
-        android:textColor="#fff"/>
+        android:textSize="30dp"
+        android:textColor="#f3ffffff"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="&quot;Committed to innovation ideas &quot; "
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/technologies"
+        android:layout_marginTop="12dp"
+        android:id="@+id/slider_desc"
+
+        />
 
 
 </LinearLayout>

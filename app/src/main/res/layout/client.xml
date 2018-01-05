@@ -2,13 +2,29 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/client"
     android:background="@drawable/client">
 
     <TextView
+        android:id="@+id/textclient"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:text="Client"
-        android:textStyle="bold"
-        android:textColor="#fff"/>
+        android:textSize="30dp"
+        android:textColor="#f2ffffff"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="&quot;We partner we commit, we secusse, we execute your plan&quot; "
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/technologies"
+        android:layout_marginTop="12dp"
+        android:id="@+id/slider_desc"
+
+        />
 
 </LinearLayout>

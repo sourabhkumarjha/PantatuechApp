@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#797777"
+    android:orientation="vertical"
+    android:background="#011424"
     tools:context="com.example.us74.pantatuechapp.MainActivity">
 
 
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="350dp"
+        android:layout_height="480dp"
         android:orientation="vertical"
         android:weightSum="1">
+
+
+
+
 
 
         <ImageView
@@ -48,64 +53,31 @@
             />
 
 
+
+
         <android.support.v4.view.ViewPager
             android:id="@+id/viewPager"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
+            android:layout_height="400dp"
+            android:paddingTop="15dp">
         </android.support.v4.view.ViewPager>
-
-
-      <android.support.constraint.ConstraintLayout
-          android:layout_width="match_parent"
-          android:layout_height="match_parent"
-          tools:context="com.example.us74.pantatuechapp.MainActivity">
-
-
-          <TextView
-              android:id="@+id/textabout"
-              android:layout_width="368dp"
-              android:layout_height="0dp"
-              android:layout_marginBottom="8dp"
-              app:layout_constraintBottom_toBottomOf="parent"
-              android:text="fdsafdsafdsafdsafdsfdsafdsfdsfds"
-              />
-
-
-
-
-      </android.support.constraint.ConstraintLayout>
-
-
-
-
-
-
-
-        <me.relex.circleindicator.CircleIndicator
-            android:id="@+id/ic_demo"
-            android:layout_width="match_parent"
-            android:layout_height="fill_parent"
-            app:ci_gravity="bottom"
-            app:ci_height="8dp"
-            app:ci_orientation="horizontal"
-
-            app:ci_width="8dp"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            >
-        </me.relex.circleindicator.CircleIndicator>
-
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
+    <me.relex.circleindicator.CircleIndicator
+        android:id="@+id/ic_demo"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        app:ci_gravity="center_horizontal"
+        app:ci_height="5dp"
+        app:ci_orientation="horizontal"
+        app:ci_width="8dp"
+        android:paddingBottom="3dp"
+        android:paddingTop="10dp" />
+        </LinearLayout>
 
-
-
-
-
-
-
-</RelativeLayout>
-
+</LinearLayout>
 
